@@ -1,11 +1,12 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
+import "./IScaledBalanceToken.sol";
 
 /// @title IVariableDebtToken
 /// @notice Defines the basic interface for a variable debt token
 
-interface IVariableDebtToken {
+interface IVariableDebtToken is IScaledBalanceToken {
     
     /// @dev Emitted after the mint action
     /// @param _from The address performing the mint
